@@ -13,9 +13,3 @@ A lightweight, terminal-based database application built in C that manages a stu
 ## 🛠️ System Architecture & Data Structure
 
 The application completely moves away from rigid arrays, leveraging a dynamic **Doubly Linked List** (`st`) instead. This allows for O(1) node insertion and seamless deletion handling without costly data shifting.
-
-       +------+      +---------+      +---------+
-NULL <-| prev |<---->|  prev   |<---->|  prev   |
-       | Node |      | Student |      | Student |
-       | head |----->|  next   |----->|  next   |-> NULL
-       +------+      +---------+      +---------+
